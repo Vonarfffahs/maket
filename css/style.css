@@ -1,0 +1,604 @@
+body {
+    background: #FFFFFF;
+    font-family: 'Poppins';
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: 0px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.1s ease;   
+}
+
+.btn:hover {
+    color:#b8b8b8;
+}
+
+.btn:active {
+    transform: translateY(2px) scale(0.98);
+}
+
+section {
+    width: 100%;
+}
+
+.section-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-color:#727272; */
+    height: 100%;
+    margin: 0 auto;
+    width: 80%;
+    padding: 2rem 0;
+}
+
+/* header */
+header > * {
+    display: inline-flex;
+    font-size: 16px;
+}
+
+header {
+    position: absolute; 
+    z-index: 1;
+    left: 0; 
+    right: 0; 
+    top: 2rem;
+    margin-inline: auto; 
+    width: 80%;
+    display: flex;
+    justify-content: space-between;   
+    text-align: center;
+}
+
+.logo-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-img {
+    width: 5rem;
+}
+
+.nav-icons {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.fa-bars,
+.fa-xmark {
+    display: none !important;
+    cursor: pointer;
+}
+
+nav {
+    width: 45%;
+    padding: 0;
+}
+
+.nav-list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 10px;
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+    align-self: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color:#FFFFFF;
+}
+
+.nav-link:hover {
+    color:#b8b8b8;
+}
+
+.nav-link:active {
+    color:#727272;
+}
+
+.nav-link.active {
+    border-bottom: solid #D68240;
+}
+
+.reserve-btn {
+    background: #D68240;
+}
+
+.reserve-btn:hover {
+    background: #9c5c2c;
+}
+
+.reserve-btn:active {
+    background: #844e25;
+}
+/* end header */
+
+/* reserve section */
+#reserve-section {
+    height: 40rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/cafe.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section-wrapper.reserve {
+    justify-content: center;
+}
+
+#reserve {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#reserve hr {
+    border: solid 2px #D68240;
+    width: 5.026vw;
+}
+
+#greeting {
+    font-size: 1.072vw;
+    font-weight: 400;
+    margin: 0;
+}
+
+#reserve-text {
+    font-size: 3.7vw;
+    /* top | right | bottom | left */
+    margin: 1rem 0 1rem 0;
+}
+
+.book-table {
+    background: none;
+    border: 1px solid #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.book-table:hover {
+    border: 1px solid #b8b8b8;
+}
+
+.book-table:active {
+    border: 1px solid #727272;
+    color: #727272;
+}
+
+.open-menu {
+    background: none;
+    font-weight: 400;
+}
+
+.open-menu:active {
+    color: #727272;
+}
+/* end reserve section */
+
+/* about us section */
+#about-us-section {
+    /* top | right | bottom | left */
+    padding: 3.5rem 0 0 0;
+    height: fit-content;
+    background-color:#0A1316;
+}
+
+#about-us-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.caption {
+    font-size: 1.2vw;
+    font-weight: 300;
+    margin: 0;
+}
+
+.underscore {
+    display: inline-block;
+    border-color: #D68240;
+    width: 4.326vw;
+}
+
+.header {
+    font-size: 2.081vw;
+    margin: 0;
+}
+
+.description {
+    color: #797B78;
+    font-size: 1.2vw;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.about-us-img {
+    width: 100%;
+    max-width: 39.611vw;
+    height: auto;
+}
+/* end about us section */
+
+/* features section */
+#feature-section {
+    /* top | right | bottom | left */
+    padding: 3.5rem 0 0 0;
+    height: fit-content;
+    background-color:#0A1316;
+}
+
+#feature-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+
+.feature-item {
+    text-align: center;
+    width: 70%;
+}
+
+.feature-item .description {
+    text-align: center;
+}
+
+.feature-item:nth-child(1) {
+    grid-column: span 3;
+}
+
+.feature-item:nth-child(1) .header {
+    font-size: 36px;
+}
+
+.feature-item .header {
+    font-size: 24px;
+}
+/* end features section */
+
+/* working hours section */
+#work-hours-section {
+    /* top and bottom | left and right */
+    padding: 3.5rem 0;
+    height: fit-content;
+    background-image: url('../img/working-hours.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.section-wrapper.work-hours
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20vw;
+}
+
+.reservation {
+    width: 31.032vw;
+}
+
+.btn-list {
+    display: flex;
+}
+
+.schedule {
+    width: 31.099vw;
+    height: 29.759vw;
+    background-color: #121A1D;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5.36vw;
+}
+
+.schedule-item {
+    > h3 {
+        font-size: 1.609vw;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    > p {
+        font-size: 1.340vw;
+        font-weight: 300;
+        margin: 0;
+    }
+}
+/* end working hours section */
+
+/* reviews section */
+#reviews-section {
+    background-color: #0A1316;
+    /* top and bottom | left and right */
+    padding: 3.5rem 0;
+}
+
+.cite-icon {
+    position: absolute;
+    left: 44%;
+    background-color: #10181B;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.review-text {
+    background-color: #10181B;
+    text-align: center;
+    /* top | right | bottom | left */
+    padding: 60px 15px 40px 15px;
+
+    > .description {
+        text-align: center; 
+    }
+}
+
+.author-name {
+    margin: 0;
+}
+
+.author-occupation {
+    margin: 0;
+    font-size: 12px;
+    color: #797B78;
+}
+/* end reviews section */
+
+/* media queries */
+@media (max-width: 1248px) {
+    .about-us-img {
+        width: 491px;
+        height: 391px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        width: 90%;
+        top: 1.5rem;
+    }
+
+    nav {
+        width: 50%;
+    }
+
+    .nav-list {
+        grid-column-gap: 5px;
+    }
+
+    #reserve-section {
+        height: 35rem;
+    }
+
+    .about-us-img {
+        width: 391px;
+        height: 291px;
+    }
+
+    .feature-item .header {
+        font-size: 18px;
+    }
+
+    .feature-img {
+        width: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: #0A1316;
+    }
+
+    #logo-img {
+        margin-left: 1rem;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-list,
+    nav + .btn.reserve-btn {
+        grid-template-columns: 1fr;
+        margin: 1rem;
+        display: none;
+    }
+
+    .nav-list.active,
+    .btn.reserve-btn.active {
+        display: block;
+    }
+
+    .nav-item:hover {
+        background-color: #101e23;
+    }
+
+    .fa-bars {
+        display: inline !important;
+    }
+
+    #reserve-section {
+        height: auto;
+        padding: 4rem 0rem;
+    }
+
+    #greeting {
+        font-size: clamp(0.8rem, 2.5vw, 3.7vw);
+    }
+
+    #reserve-text {
+        font-size: clamp(1.5rem, 6vw, 3.7vw);
+    }
+
+    .section-wrapper.about-us {
+        width: fit-content;
+        /* top and bottom | left and right */
+        margin: 0 1rem;
+    }
+
+    #about-us-list {
+        grid-template-columns: 1fr;
+        grid-template-rows: 6fr;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .about-us-item:nth-child(4) {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .caption {
+        font-size: larger;
+    }
+
+    .underscore {
+        width: 5rem;
+    }
+
+    .header {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    #feature-list {
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+    }
+
+    .feature-item:nth-child(1) {
+        grid-column: 1;
+    }
+
+    .feature-item:nth-child(1) .header {
+        font-size: 32px;
+    }
+
+    .feature-item .header {
+        font-size: 18px;
+    }
+
+    .feature-img {
+        width: 49px;
+    }
+
+    #work-hours-section {
+        padding: 0;
+    }
+
+    .section-wrapper.work-hours
+    {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        justify-items: center;
+        padding: 1rem;
+    }
+
+    .reservation {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .schedule {
+        width: 80%;
+        height: 29.759vw;
+    }
+
+    .schedule-item {
+        > h3 {
+            font-size: 24px;
+        }
+
+        > p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .btn,
+    .reserve-btn,
+    .book-table,
+    .open-menu {
+        width: 100%;
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    #about-us-section,
+    #feature-section {
+        padding: 0;
+    }
+
+    .about-us-text {
+        width: fit-content;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .reservation {
+        > .header {
+            font-size: 30px;
+        }
+    }
+
+    .schedule {
+        padding: 1rem;
+    }
+
+    .schedule-item {
+        > h3 {
+            font-size: 24px;
+        }
+
+        > p {
+            font-size: 16px;
+        }
+    }
+}
