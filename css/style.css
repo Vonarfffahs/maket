@@ -27,15 +27,18 @@ body {
     transform: translateY(2px) scale(0.98);
 }
 
+.section {
+    padding: 0 32px;
+}
+
 .section-wrapper {
     margin: 0 auto;
     max-width: 1440px;
     width: 100%;
-    padding: 0 32px;
 }
 
 /* header */
-#header-container {
+.header-container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/cafe.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -47,7 +50,6 @@ body {
 header {
     margin: 0 auto;
     max-width: 1440px;
-    max-height: 48px;
     width: 100%;
     display: flex;
     justify-content: space-between;   
@@ -58,14 +60,10 @@ header {
 }
 
 .logo-icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 101px;
-    height: 25px;
+    height: 49px;
 }
 
-#logo-img {
+.logo-img {
     width: 100%;
     height: 100%;
 }
@@ -112,8 +110,8 @@ nav {
     background: #D68240;
 }
 
-#reserve-section {
-    height: calc(100% - 86px);
+.section.reserve {
+    height: calc(100% - 93px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,24 +122,24 @@ nav {
     justify-content: center;
 }
 
-#reserve {
+.reserve {
     margin: 0 auto;
     text-align: center;
 }
 
-#reserve hr {
+.reserve hr {
     border: 0;
     border-bottom: 2px solid #D68240;
     width: 73px;
 }
 
-#greeting {
+.greeting {
     font-size: 16px;
     font-weight: 400;
     margin: 0;
 }
 
-#reserve-text {
+.reserve-text {
     font-size: 64px;
     /* top | right | bottom | left */
     margin: 0;
@@ -165,9 +163,9 @@ nav {
 /* end header */
 
 /* about us section */
-#about-us-section {
+.section.about-us {
     /* top | right | bottom | left */
-    padding: 120px 0;
+    padding: 120px 32px;
     background-color:#0A1316;
 }
 
@@ -177,11 +175,6 @@ nav {
     height: 550px;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
-}
-
-.about-us-row.row-2 {
-    justify-content: flex-start;
     gap: 40px;
 }
 
@@ -226,6 +219,62 @@ nav {
 /* end about us section */
 
 /* features section */
+.section.feature {
+    background-color: #0A1316;
+    /* top | right | bottom | left */
+    padding: 30px 32px 120px 32px;
+}
+
+.feature-text {
+    max-width: 787px;
+    width: 100%;
+    /* top | right | bottom | left */
+    margin: 0 auto 72px auto;
+    text-align: center;
+
+    > .description {
+        text-align: center;
+    }
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-list-item {
+    max-width: 463px;
+    width: 100%;
+    text-align: center;
+
+    > .header {
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 48px;
+    }
+
+    > .description {
+        max-width: 347px;
+        width: 100%;
+        /* top | right | bottom | left */
+        margin: 24px auto 0 auto;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+.feature-img-container {
+    max-width: 72px;
+    max-height: 72px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* end working hours section */
 
 /* reviews section */
