@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="src/assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -11,15 +11,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/glide.core.min.css" />
-    <link rel="stylesheet" href="css/glide.theme.min.css" />
+    <link rel="stylesheet" href="src/assets/css/glide.core.min.css" />
+    <link rel="stylesheet" href="src/assets/css/glide.theme.min.css" />
     <title>Foodi</title>
   </head>
   <body>
     <div class="header-container">
       <header>
         <a class="logo-icons" href="/">
-          <img class="logo-img" src="img/foodi-logo.svg" alt="foodi logo" />
+          <img
+            class="logo-img"
+            src="src/assets/img/foodi-logo.svg"
+            alt="foodi logo"
+          />
         </a>
         <nav>
           <ul class="nav-list">
@@ -79,13 +83,21 @@
               <button class="btn reserve-btn">READ MORE</button>
             </article>
             <div class="about-us-img-container">
-              <img class="about-us-img" src="img/chef1.png" alt="cook 1" />
+              <img
+                class="about-us-img"
+                src="src/assets/img/chef1.png"
+                alt="cook 1"
+              />
             </div>
           </div>
 
           <div class="about-us-row">
             <div class="about-us-img-container">
-              <img class="about-us-img" src="img/chef2.png" alt="cook 2" />
+              <img
+                class="about-us-img"
+                src="src/assets/img/chef2.png"
+                alt="cook 2"
+              />
             </div>
             <article class="about-us-text">
               <h6 class="caption">COFFEE MENU</h6>
@@ -115,7 +127,11 @@
               <button class="btn reserve-btn">READ MORE</button>
             </article>
             <div class="about-us-img-container">
-              <img class="about-us-img" src="img/chef3.png" alt="cook 3" />
+              <img
+                class="about-us-img"
+                src="src/assets/img/chef3.png"
+                alt="cook 3"
+              />
             </div>
           </div>
         </div>
@@ -139,7 +155,7 @@
               <div class="feature-img-container">
                 <img
                   class="feature-img"
-                  src="img/eat-icon.png"
+                  src="src/assets/img/eat-icon.png"
                   alt="eat icon"
                 />
               </div>
@@ -153,7 +169,7 @@
               <div class="feature-img-container">
                 <img
                   class="feature-img"
-                  src="img/beans-icon.png"
+                  src="src/assets/img/beans-icon.png"
                   alt="beans icon"
                 />
               </div>
@@ -167,7 +183,7 @@
               <div class="feature-img-container">
                 <img
                   class="feature-img"
-                  src="img/chef-icon.png"
+                  src="src/assets/img/chef-icon.png"
                   alt="chef icon"
                 />
               </div>
@@ -353,24 +369,35 @@
                   <div class="app-btn">
                     <a href="#">
                       <img
-                        src="img/google-play-btn.png"
+                        src="src/assets/img/google-play-btn.png"
                         alt="google play button"
                       />
                     </a>
                   </div>
                   <div class="app-btn">
                     <a href="#">
-                      <img src="img/app-store-btn.png" alt="app store button" />
+                      <img
+                        src="src/assets/img/app-store-btn.png"
+                        alt="app store button"
+                      />
                     </a>
                   </div>
                 </div>
               </div>
               <div class="app-img-list">
                 <div class="app-img-container img-1">
-                  <img class="app-img" src="img/app1.png" alt="app img 1" />
+                  <img
+                    class="app-img"
+                    src="src/assets/img/app1.png"
+                    alt="app img 1"
+                  />
                 </div>
                 <div class="app-img-container img-2">
-                  <img class="app-img" src="img/app2.png" alt="app img 2" />
+                  <img
+                    class="app-img"
+                    src="src/assets/img/app2.png"
+                    alt="app img 2"
+                  />
                 </div>
               </div>
             </div>
@@ -396,7 +423,7 @@
               <div class="mli-img-container">
                 <img
                   class="mli-img"
-                  src="img/menu-item1.png"
+                  src="src/assets/img/menu-item1.png"
                   alt="menu item img 1"
                 />
               </div>
@@ -418,7 +445,7 @@
               <div class="mli-img-container">
                 <img
                   class="mli-img"
-                  src="img/menu-item2.png"
+                  src="src/assets/img/menu-item2.png"
                   alt="menu item img 2"
                 />
               </div>
@@ -440,7 +467,7 @@
               <div class="mli-img-container">
                 <img
                   class="mli-img"
-                  src="img/menu-item3.png"
+                  src="src/assets/img/menu-item3.png"
                   alt="menu item img 3"
                 />
               </div>
@@ -478,5 +505,6 @@
       };
       new Glide(".glide", config).mount();
     </script>
+    <script type="module" src="src/index.ts"></script>
   </body>
 </html>
