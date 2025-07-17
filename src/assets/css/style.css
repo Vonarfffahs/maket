@@ -1,9 +1,39 @@
-* {
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+*,
+body {
   box-sizing: border-box;
 }
 
 body {
   font-family: "Poppins";
+  font-weight: 500;
   color: #ffffff;
   padding: 0;
   margin: 0;
@@ -17,6 +47,10 @@ body {
   color: #ffffff;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: "Poppins";
 }
 
 .btn:hover {
@@ -29,8 +63,9 @@ body {
 
 .section-wrapper {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: calc(1440px + 64px);
   width: 100%;
+  padding: 0 32px;
 }
 
 /* header */
@@ -132,7 +167,6 @@ nav {
 
 .greeting {
   font-size: 16px;
-  font-weight: 400;
   margin: 0;
 }
 
@@ -146,23 +180,17 @@ nav {
   background: none;
   border: 1px solid #ffffff;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
 }
 
 .open-menu {
   background: none;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
 }
 /* end header */
 
 /* about us section */
 .about-us-section {
   /* top | right | bottom | left */
-  padding: 120px 32px;
+  padding: 120px 0;
   background-color: #0a1316;
 }
 
@@ -181,7 +209,6 @@ nav {
 
 .caption {
   font-size: 16px;
-  font-weight: 300;
   margin: 0;
 }
 
@@ -193,14 +220,12 @@ nav {
 
 .about-us-text-title {
   font-size: 36px;
-  font-weight: 500;
   margin: 0;
 }
 
 .about-us-text-description {
   color: #797b78;
   font-size: 16px;
-  font-weight: 300;
   text-align: justify;
 }
 
@@ -220,7 +245,7 @@ nav {
 .feature-section {
   background-color: #0a1316;
   /* top | right | bottom | left */
-  padding: 30px 32px 120px 32px;
+  padding: 30px 0 120px;
 }
 
 .feature-text {
@@ -233,14 +258,12 @@ nav {
 
 .feature-text-title {
   font-size: 36px;
-  font-weight: 500;
   margin: 0;
 }
 
 .feature-text-description {
   color: #797b78;
   font-size: 16px;
-  font-weight: 300;
   text-align: center;
 }
 
@@ -258,7 +281,6 @@ nav {
 
 .feature-list-item-title {
   font-size: 24px;
-  font-weight: 500;
   margin-top: 48px;
 }
 
@@ -289,7 +311,6 @@ nav {
   background-size: cover;
   max-height: 600px;
   height: 100%;
-  padding: 0 32px;
 }
 
 .working-hours {
@@ -319,12 +340,10 @@ nav {
 
 .wh-book-table-btn {
   background-color: #d68240;
-  font-size: 16px;
 }
 
 .wh-contact-us-btn {
   background: none;
-  font-size: 16px;
 }
 
 .wh-schedule {
@@ -342,14 +361,12 @@ nav {
 
 .wh-schedule-days {
   font-size: 24px;
-  font-weight: 500;
   /* top | right | bottom | left */
   margin: 0 0 20px 0;
 }
 
 .wh-schedule-hours {
   font-size: 20px;
-  font-weight: 400;
   margin: 0;
 }
 /* end working hours section */
@@ -357,7 +374,7 @@ nav {
 /* reviews section */
 .reviews-section {
   background-color: #0a1316;
-  padding: 120px 32px;
+  padding: 120px 0;
 }
 
 .reviews {
@@ -374,14 +391,12 @@ nav {
 
 .reviews-text-title {
   font-size: 36px;
-  font-weight: 500;
   margin: 0;
 }
 
 .reviews-text-description {
   color: #797b78;
   font-size: 16px;
-  font-weight: 300;
   text-align: center;
 }
 
@@ -436,6 +451,7 @@ nav {
 .rsi-rating-job {
   color: #797b78;
   font-size: 12px;
+  font-weight: 400;
 }
 
 .item-1 .rsi-rating-stars,
@@ -497,10 +513,11 @@ nav {
 
 /* app section */
 .app-section {
-  max-height: 724px;
-  height: 100%;
+  height: 724px;
   background-color: #0a1316;
-  padding: 78px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .app-background {
@@ -511,11 +528,12 @@ nav {
   background-size: cover;
   max-height: 567px;
   height: 100%;
-  padding: 0 32px;
+  width: 100%;
 }
 
 .app {
   max-height: 567px;
+  max-width: 1350px;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -554,7 +572,6 @@ nav {
 .app-img-list {
   display: flex;
   gap: 32px;
-  margin-right: 91px;
 }
 
 .app-img-container {
@@ -581,7 +598,7 @@ nav {
 /* menu section */
 .menu-section {
   background-color: #0a1316;
-  padding: 120px 32px;
+  padding: 120px 0;
 }
 
 .menu-text {
@@ -595,7 +612,6 @@ nav {
   margin: 0;
   margin-bottom: 12px;
   font-size: 36px;
-  font-weight: 500;
 }
 
 .menu-text-desc {
@@ -617,7 +633,6 @@ nav {
 }
 
 .mli-img-container {
-  max-width: 464px;
   max-height: 320px;
   width: 100%;
   height: 100%;
@@ -636,7 +651,6 @@ nav {
 
 .mli-text-title {
   font-size: 24px;
-  font-weight: 500;
   color: #d68240;
 }
 
@@ -648,7 +662,6 @@ nav {
 .mli-price {
   margin-top: 16px;
   font-size: 24px;
-  font-weight: 500;
   color: #d68240;
 }
 
@@ -659,7 +672,6 @@ nav {
 
 .mli-btn {
   background-color: #d68240;
-  font-size: 16px;
   margin-top: 16px;
 }
 /* end menu section */
