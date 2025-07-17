@@ -494,3 +494,172 @@ nav {
   color: #d68240;
 }
 /* end reviews section */
+
+/* app section */
+.app-section {
+  max-height: 724px;
+  height: 100%;
+  background-color: #0a1316;
+  padding: 78px 0;
+}
+
+.app-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../img/app-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-height: 567px;
+  height: 100%;
+  padding: 0 32px;
+}
+
+.app {
+  max-height: 567px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-text {
+  max-width: 453px;
+  width: 100%;
+  margin-right: 32px;
+}
+
+.app-text-title {
+  margin: 0;
+  margin-bottom: 48px;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.app-btn-container {
+  display: flex;
+  gap: 13px;
+}
+
+.app-btn {
+  max-width: 220px;
+  max-height: 74px;
+}
+
+.app-btn-google-play {
+  background-image: url("../img/google-play-btn.png");
+  width: 100%;
+  height: 100%;
+}
+
+.app-img-list {
+  display: flex;
+  gap: 32px;
+  margin-right: 91px;
+}
+
+.app-img-container {
+  max-width: 293px;
+  max-height: 633px;
+}
+
+.app-img {
+  width: 100%;
+  height: 100%;
+}
+
+.img-1 {
+  position: relative;
+  top: -44px;
+}
+
+.img-2 {
+  position: relative;
+  top: 40px; /*!!!*/
+}
+/* end app section */
+
+/* menu section */
+.menu-section {
+  background-color: #0a1316;
+  padding: 120px 32px;
+}
+
+.menu-text {
+  max-width: 787px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.menu-text-title {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.menu-text-desc {
+  margin: 0;
+  font-size: 16px;
+  color: #797b78;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 72px;
+}
+
+.menu-list-item {
+  background-color: #121a1d;
+  border-radius: 8px;
+}
+
+.mli-img-container {
+  max-width: 464px;
+  max-height: 320px;
+  width: 100%;
+  height: 100%;
+}
+
+.mli-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.mli-content {
+  margin: 20px;
+}
+
+.mli-text-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #d68240;
+}
+
+.mli-text-desc {
+  font-size: 16px;
+  color: #797b78;
+}
+
+.mli-price {
+  margin-top: 16px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #d68240;
+}
+
+.mli-price-promotion {
+  color: #a19e9b;
+  text-decoration: line-through;
+}
+
+.mli-btn {
+  background-color: #d68240;
+  font-size: 16px;
+  margin-top: 16px;
+}
+/* end menu section */
