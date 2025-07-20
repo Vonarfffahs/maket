@@ -1,9 +1,39 @@
-* {
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+*,
+body {
   box-sizing: border-box;
 }
 
 body {
   font-family: "Poppins";
+  font-weight: 500;
   color: #ffffff;
   padding: 0;
   margin: 0;
@@ -17,6 +47,10 @@ body {
   color: #ffffff;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: "Poppins";
 }
 
 .btn:hover {
@@ -29,8 +63,9 @@ body {
 
 .section-wrapper {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: calc(1440px + 64px);
   width: 100%;
+  padding: 0 32px;
 }
 
 /* header */
@@ -132,7 +167,6 @@ nav {
 
 .greeting {
   font-size: 16px;
-  font-weight: 400;
   margin: 0;
 }
 
@@ -146,23 +180,17 @@ nav {
   background: none;
   border: 1px solid #ffffff;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
 }
 
 .open-menu {
   background: none;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
 }
 /* end header */
 
 /* about us section */
 .about-us-section {
   /* top | right | bottom | left */
-  padding: 120px 32px;
+  padding: 120px 0;
   background-color: #0a1316;
 }
 
@@ -181,7 +209,6 @@ nav {
 
 .caption {
   font-size: 16px;
-  font-weight: 300;
   margin: 0;
 }
 
@@ -193,14 +220,12 @@ nav {
 
 .about-us-text-title {
   font-size: 36px;
-  font-weight: 500;
   margin: 0;
 }
 
 .about-us-text-description {
   color: #797b78;
   font-size: 16px;
-  font-weight: 300;
   text-align: justify;
 }
 
@@ -220,7 +245,7 @@ nav {
 .feature-section {
   background-color: #0a1316;
   /* top | right | bottom | left */
-  padding: 30px 32px 120px 32px;
+  padding: 30px 0 120px;
 }
 
 .feature-text {
@@ -233,14 +258,12 @@ nav {
 
 .feature-text-title {
   font-size: 36px;
-  font-weight: 500;
   margin: 0;
 }
 
 .feature-text-description {
   color: #797b78;
   font-size: 16px;
-  font-weight: 300;
   text-align: center;
 }
 
@@ -258,7 +281,6 @@ nav {
 
 .feature-list-item-title {
   font-size: 24px;
-  font-weight: 500;
   margin-top: 48px;
 }
 
@@ -289,7 +311,6 @@ nav {
   background-size: cover;
   max-height: 600px;
   height: 100%;
-  padding: 0 32px;
 }
 
 .working-hours {
@@ -319,12 +340,10 @@ nav {
 
 .wh-book-table-btn {
   background-color: #d68240;
-  font-size: 16px;
 }
 
 .wh-contact-us-btn {
   background: none;
-  font-size: 16px;
 }
 
 .wh-schedule {
@@ -342,14 +361,12 @@ nav {
 
 .wh-schedule-days {
   font-size: 24px;
-  font-weight: 500;
   /* top | right | bottom | left */
   margin: 0 0 20px 0;
 }
 
 .wh-schedule-hours {
   font-size: 20px;
-  font-weight: 400;
   margin: 0;
 }
 /* end working hours section */
@@ -357,7 +374,7 @@ nav {
 /* reviews section */
 .reviews-section {
   background-color: #0a1316;
-  padding: 120px 32px;
+  padding: 120px 0;
 }
 
 .reviews {
@@ -374,14 +391,12 @@ nav {
 
 .reviews-text-title {
   font-size: 36px;
-  font-weight: 500;
   margin: 0;
 }
 
 .reviews-text-description {
   color: #797b78;
   font-size: 16px;
-  font-weight: 300;
   text-align: center;
 }
 
@@ -436,6 +451,7 @@ nav {
 .rsi-rating-job {
   color: #797b78;
   font-size: 12px;
+  font-weight: 400;
 }
 
 .item-1 .rsi-rating-stars,
@@ -497,10 +513,11 @@ nav {
 
 /* app section */
 .app-section {
-  max-height: 724px;
-  height: 100%;
+  height: 724px;
   background-color: #0a1316;
-  padding: 78px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .app-background {
@@ -511,11 +528,12 @@ nav {
   background-size: cover;
   max-height: 567px;
   height: 100%;
-  padding: 0 32px;
+  width: 100%;
 }
 
 .app {
   max-height: 567px;
+  max-width: 1350px;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -554,7 +572,6 @@ nav {
 .app-img-list {
   display: flex;
   gap: 32px;
-  margin-right: 91px;
 }
 
 .app-img-container {
@@ -581,7 +598,7 @@ nav {
 /* menu section */
 .menu-section {
   background-color: #0a1316;
-  padding: 120px 32px;
+  padding: 120px 0;
 }
 
 .menu-text {
@@ -595,7 +612,6 @@ nav {
   margin: 0;
   margin-bottom: 12px;
   font-size: 36px;
-  font-weight: 500;
 }
 
 .menu-text-desc {
@@ -614,10 +630,10 @@ nav {
 .menu-list-item {
   background-color: #121a1d;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .mli-img-container {
-  max-width: 464px;
   max-height: 320px;
   width: 100%;
   height: 100%;
@@ -636,19 +652,24 @@ nav {
 
 .mli-text-title {
   font-size: 24px;
-  font-weight: 500;
   color: #d68240;
+  text-decoration: none;
+}
+
+.mli-text-title:hover {
+  text-decoration: underline;
 }
 
 .mli-text-desc {
+  margin: 0;
   font-size: 16px;
   color: #797b78;
 }
 
 .mli-price {
+  margin: 0;
   margin-top: 16px;
   font-size: 24px;
-  font-weight: 500;
   color: #d68240;
 }
 
@@ -659,7 +680,213 @@ nav {
 
 .mli-btn {
   background-color: #d68240;
-  font-size: 16px;
   margin-top: 16px;
 }
 /* end menu section */
+
+/* subscription section */
+.subscription-section {
+  height: 420px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/subscription-background.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  padding: 83px 0;
+}
+
+.subscription {
+  max-width: 889px;
+  width: 100%;
+}
+
+.sub-text-title {
+  margin: 0;
+  font-size: 36px;
+}
+
+.sub-text-desc {
+  margin: 0;
+  margin-top: 12px;
+  color: #797b78;
+}
+
+.sub-form {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+.sub-form-input-text {
+  max-width: 708px;
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  border: 0;
+  padding: 15px 26px;
+  background-color: #182f31;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins";
+  line-height: 30px;
+  color: #b2bbbb;
+}
+
+.sub-form-input-text::placeholder {
+  color: #b2bbbb;
+}
+
+.sub-form-input-text:focus {
+  outline: none;
+}
+
+.sub-form-submit {
+  max-width: 165px;
+  width: 100%;
+  background-color: #d68240;
+  font-size: 20px;
+  line-height: 28px;
+}
+/* end subscription section */
+
+/* footer */
+footer {
+  height: 414px;
+  background-color: #121a1d;
+  padding-top: 60px;
+  padding-bottom: 16px;
+}
+
+.footer-content {
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-media {
+  max-width: 401px;
+  width: 100%;
+}
+
+.fsm-logo-desc {
+}
+
+.fsm-logo-icon {
+  width: 109px;
+  height: 41px;
+  display: inline-block;
+}
+
+.fsm-desc {
+  margin: 0;
+  margin-top: 24px;
+  color: #797b78;
+  font-size: 14px;
+}
+
+.fsm-social-btns {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+.fsm-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fsm-btn:hover {
+  background-color: #d68240;
+
+  > .fsm-btn-logo path {
+    transition: all 0.3s ease;
+    fill: white;
+  }
+}
+
+.footer-columns {
+  display: flex;
+  gap: 75px;
+}
+
+.fc-title {
+  margin: 0;
+  font-size: 16px;
+}
+
+.fc-list {
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  color: #797b78;
+}
+
+.fc-list-item {
+  margin-top: 8px;
+}
+
+.fcli-link,
+.fc-contacts-location {
+  color: #797b78;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.fcli-link:hover,
+.fc-contacts-location:hover {
+  color: #d68240;
+}
+
+.fc-contacts {
+  color: #797b78;
+}
+
+.fc-contacts-form {
+  margin-top: 24px;
+  max-width: 342px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+}
+
+.fc-contacts-email {
+  border: 0;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 500;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 15px 26px;
+}
+
+.fc-contacts-submit-container {
+  background-color: #fff;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 6px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fc-contacts-submit {
+  background-color: #d68240;
+}
+
+.footer-copyright {
+}
+
+/* end footer */
