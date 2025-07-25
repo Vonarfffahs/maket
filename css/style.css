@@ -107,54 +107,39 @@ header {
   align-items: center;
 }
 
-.burger-menu-container {
-  display: none;
-  width: 48px;
-  height: 48px;
-  position: relative;
-  z-index: 1001;
-  cursor: pointer;
+.modal-container {
+  &.active {
+    .offscreen-menu {
+      transform: translateX(0);
+    }
 
-  &:hover {
-    .burger-menu-row {
-      background-color: #fff;
+    .offscreen-hide {
+      display: block;
     }
   }
 }
 
-.burger-menu-container.active {
-  .burger-menu-row:nth-child(1) {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
+.burger-menu-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+
+  .burger-menu-line {
+    height: 5px;
+    width: 100%;
+    background-color: #d68240;
+    border-radius: 25px;
+    transition: 0.3s ease;
   }
 
-  .burger-menu-row:nth-child(2) {
-    opacity: 0;
-  }
-
-  .burger-menu-row:nth-child(3) {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
-}
-
-.burger-menu-row {
-  height: 5px;
-  width: 100%;
-  background-color: #d68240;
-  border-radius: 25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.3s ease;
-
-  &:nth-child(1) {
-    top: 25%;
-  }
-
-  &:nth-child(3) {
-    top: 75%;
+  &:hover {
+    .burger-menu-line {
+      background-color: #fff;
+    }
   }
 }
 
@@ -193,11 +178,8 @@ header {
   .nav-list {
     display: flex;
     flex-direction: column;
-    text-align: right;
-  }
-
-  .nav-item.active {
-    border: 0;
+    text-align: center;
+    font-size: 18px;
   }
 }
 

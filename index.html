@@ -14,37 +14,40 @@
     <link rel="stylesheet" href="css/glide.theme.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Foodi</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
   </head>
   <body>
-    <div class="offscreen-hide" id="offscreen-hide"></div>
-    <aside class="offscreen-menu" id="offscreen-menu">
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pages</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Order</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Shop</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="btn reserve-btn">RESERVATION</button>
-    </aside>
+    <div class="modal-container">
+      <div class="offscreen-hide" id="offscreen-hide"></div>
+      <aside class="offscreen-menu" id="offscreen-menu">
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages.html">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./order.html">Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./shop.html">Shop</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn reserve-btn">RESERVATION</button>
+      </aside>
+    </div>
     <div class="header-container">
       <header>
         <a class="logo-icons" href="/">
@@ -56,32 +59,30 @@
               <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/Pages.html" id="pages">Pages</a>
+              <a class="nav-link" href="./pages.html">Pages</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/Menu.html" id="menu">Menu</a>
+              <a class="nav-link" href="./menu.html">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/Order.html" id="order">Order</a>
+              <a class="nav-link" href="./order.html">Order</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/Blog.html" id="blog">Blog</a>
+              <a class="nav-link" href="./blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/Contact.html" id="contact"
-                >Contact</a
-              >
+              <a class="nav-link" href="./contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/Shop.html" id="shop">Shop</a>
+              <a class="nav-link" href="./shop.html">Shop</a>
             </li>
           </ul>
         </nav>
         <button class="btn reserve-btn">RESERVATION</button>
         <div class="burger-menu-container" id="burger-menu">
-          <div class="burger-menu-row"></div>
-          <div class="burger-menu-row"></div>
-          <div class="burger-menu-row"></div>
+          <div class="burger-menu-line"></div>
+          <div class="burger-menu-line"></div>
+          <div class="burger-menu-line"></div>
         </div>
       </header>
       <div class="reserve-section">
@@ -671,6 +672,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script src="/js/script.js"></script>
+    <script src="/js/index.js" type="module"></script>
   </body>
 </html>
